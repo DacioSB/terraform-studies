@@ -1,0 +1,13 @@
+# First we are going to deploy resources in our networking subscription
+# Be sure to select the networking subscription for your subname
+az account show
+az account set --subscription SUB_NAME
+
+terraform init
+terraform plan -var resource_group_name=Terraform-Learning -out vnet.tfplan
+terraform apply "vnet.tfplan"
+
+export ARM_CLIENT_ID=9d4b779b-e269-40e1-9589-710d9968b445
+export ARM_CLIENT_SECRET=p6a8Q~QqiSMcGiM4~3eOph3Bt3Pvx_2Ap7FJNcfG
+export ARM_SUBSCRIPTION_ID=118c830b-3554-4334-b02c-0b2c2d5822fc
+export ARM_TENANT_ID=dce5d885-b3cf-4c99-a83f-60b4092d1955

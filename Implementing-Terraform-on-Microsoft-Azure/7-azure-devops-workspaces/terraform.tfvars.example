@@ -1,0 +1,8 @@
+resource_group_name = "vnet"
+sec_sub_id = "SEC_SUB_ID"
+sec_client_id = "SEC_CLIENT_ID"
+sec_tenant_id="SEC_TENANT_ID"
+sec_vnet_name = "security"
+sec_vnet_id = "SEC_VNET_ID"
+sec_resource_group = "security"
+sec_principal_id = "SEC_PRINCIPAL_ID"
